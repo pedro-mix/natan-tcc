@@ -21,32 +21,32 @@ body {
 
   .mega-title-text {
     font-size: 48px;
-    line-height: 110%;
+    line-height: 105%;
   }
 
   .section-title-text {
     font-size: 32px;
-    line-height: 120%;
+    line-height: 110%;
   }
 
   .title-text {
     font-size: 24px;
-    line-height: 130%;
+    line-height: 115%;
   }
 
   .bigger-body-text {
     font-size: 18px;
-    line-height: 140%;
+    line-height: 120%;
   }
 
   .body-text {
     font-size: 16px;
-    line-height: 150%;
+    line-height: 130%;
   }
 
   .small-text {
     font-size: 14px;
-    line-height: 140%;
+    line-height: 125%;
   }
 
   @media (min-width: 640px) {

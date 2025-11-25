@@ -2,7 +2,7 @@
   <div class="flex flex-col h-full w-full overflow-y-auto nice-scrollbar">
     <Header />
 
-    <TimeTabsCards />
+    <TimeTabsCards @update:currentTab="currentTab = $event" />
 
     <div class="w-full py-20 bg-black">
       <UContainer class="text-center bigger-body-text text-white">
@@ -12,10 +12,20 @@
         Santa Catarina por Natan Batista Balthazar com orientação da professora Isabel Colucci Coelho.
       </UContainer>
     </div>
+
+    <Tabs v-model:currentTab="currentTab" />
+
+    <ContentPast v-if="currentTab === 'past'" id="past-content" />
+
+    <ContentPresent v-else-if="currentTab === 'present'" id="present-content" />
+
+    <ContentFuture v-else-if="currentTab === 'future'" id="future-content" />
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const currentTab = ref("past");
+</script>
 
 <style scoped>
 .nice-scrollbar {
