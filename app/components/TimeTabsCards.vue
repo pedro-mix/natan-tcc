@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full py-20">
+  <div class="w-full py-16">
     <UContainer class="flex justify-center items-center w-full gap-4">
       <div
         v-for="(tab, index) in timeTabs"

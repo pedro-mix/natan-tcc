@@ -4,7 +4,7 @@
 
     <TimeTabsCards @update:currentTab="currentTab = $event" />
 
-    <div class="w-full py-20 bg-black">
+    <div class="w-full py-28 bg-black">
       <UContainer class="text-center bigger-body-text text-white">
         Esta reportagem digital é dedicada aos moradores da Comunidade Remanescente de Quilombo Maria
         Rosalina. Todos os agradecimentos vão a eles e a todos os envolvidos na apuração. Produzido para o
