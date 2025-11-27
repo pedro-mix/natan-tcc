@@ -2,7 +2,15 @@
   <div class="w-full">
     <div v-if="data.leftImage"></div>
 
-    <div v-if="data.fullImage"></div>
+    <div v-if="data.fullImage" class="flex flex-col w-full gap-1">
+      <nuxt-img :src="data.fullImage" :alt="data.alt" class="w-full h-auto object-cover" />
+
+      <div class="flex flex-col small-text">
+        <div>Legenda: {{ data.subtitle }}</div>
+
+        <div>Créditos: {{ data.credits }}</div>
+      </div>
+    </div>
 
     <div v-if="data.rightImage" class="flex items-center w-full gap-16">
       <div class="flex flex-col w-1/2">

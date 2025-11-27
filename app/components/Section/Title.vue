@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col text-center w-full gap-6 py-4">
+  <div class="flex flex-col text-center w-full gap-6 py-3">
     <div class="section-title-text font-bold" v-html="props.title" />
 
     <div class="bigger-body-text" v-html="props.subtitle" />
