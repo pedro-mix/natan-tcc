@@ -34,6 +34,18 @@
       <SectionDialogBox :content="thirdDialogBox" />
 
       <SectionBodyText :texts="ninethBodyText.texts" :title="ninethBodyText.title" />
+
+      <SectionImageContainer :data="fifthImage" />
+
+      <SectionBodyText :texts="tenthBodyText" />
+
+      <SectionBodyText :texts="eleventhBodyText.texts" :title="eleventhBodyText.title" />
+
+      <SectionImageContainer :data="sixthImage" />
+
+      <SectionBodyText :texts="twelfthBodyText" />
+
+      <SectionBodyText :title="thirteenthBodyText.title" />
     </UContainer>
   </div>
 </template>
@@ -200,10 +212,103 @@ const ninethBodyText = {
 };
 
 const fifthImage = {
-  alt: "Foto do terreno onde se localiza a Comunidade Remanescente de Quilombo Maria Rosalina, vista de cima.",
+  alt: "Figura 1 - Território da Freguesia de Araranguá (1848) e sua localização dentro dos limites atuais de Santa Catarina (2021).",
   credits:
     "Do Plano Urbano ao heliponto: notas sobre o processo histórico das transformações urbanas em Araranguá/SC (1886-2017), por Richard Vieira Ronconi* Josiel dos Santos (2021)",
   fullImage: "/images/past05.webp",
+};
+
+const tenthBodyText = [
+  "Cerca de um terço (31%) dos habitantes de Nossa Senhora Mãe dos Homens dispunham de escravos. Oficialmente, a posse de pessoas escravizadas deixou de ser permitida a partir de 1888, oito anos antes da Freguesia se emancipar de Laguna através da Lei Provincial nº 901/1880, que elevou o povoado às margens do Rio Araranguá à sede da Freguesia que a partir de então levaria seu nome.",
+
+  "Os 907 escravizados que, uma vez libertos em 1888, encontraram diferentes formas de organização na microrregião do Vale do Araranguá, fizeram parte da formação de comunidades distintas na região. Foi a partir daí que surgiu também a Comunidade Quilombola São Roque, em Praia Grande, município que se emancipou de Araranguá em 1967. Com uma colonização de matriz italiana e alemã, Araranguá tem, segundo o Censo de 2022, 1.971 pessoas autodeclaradas pretas (2,8%) e 8.775 pardas (12,2%), além de 78 indígenas (0,1%).",
+
+  "Em Timbé do Sul, que também deixou de ser parte de Araranguá em 1967, existiu uma comunidade conhecida como “Morro da África”. O território do município hoje faz divisa com Cambará do Sul e São José dos Ausentes, os dois já parte do Rio Grande do Sul, estado que aboliu a escravidão quatro anos antes do resto do país, em 1884.",
+
+  "Em entrevista concedida a César Spricigo em 1993, o então morador mais antigo do que na época era conhecido como “Buraco Quente”, Otávio Tomé dos Santos, recordou que os primeiros habitantes do terreno que viria a se tornar o quilombo chegaram por volta de 1930, quase 20 anos antes de Mariazinha Parteira. A região foi descrita como praticamente vazia, e o primeiro a se instalar no local foi José Marcília, seu sogro, que precedeu a formação da comunidade.",
+
+  "O nome Buraco Quente começa a ser citado a partir de 1935. Com a chegada da Congregação de São José em Araranguá, que se estabeleceu próximo à comunidade em 1955. Os chamados “Josefinos de Murialdo”, grupo religioso que fundou o colégio ao lado, sugeriram que a comunidade fosse rebatizada para “Vila São José”, para remover o teor pejorativo. O nome não foi aderido pela comunidade e acabou dando origem ao bairro que faz divisa, futuramente a denominação “Vila Samaria” seria adotada, antes de ser abandonada em prol de Maria Rosalina.",
+
+  "Na época, Araranguá era local de passagem para Cricíuma, município que foi seu distrito até o ano de 1925 e se encontrava em rápido crescimento em função da exploração de carvão na região, atraindo um grande fluxo de pessoas. Os viajantes frequentemente faziam parada na “Casa dos Pobres”, uma instituição municipal que abrigava pessoas desabitadas e se localizava a cerca de 100 metros de onde hoje vivem os remanescentes, no mesmo quarteirão. O terreno do quilombo já pertencia a Maximiliano Hennemann e habitado por Mariazinha, assim alguns dos que passavam por lá acabavam ficando, até que a instituição foi desativada pela prefeitura, deixando muitos sem lugar para morar além da comunidade.",
+
+  "Entrevistar pessoas envolvidas na origem do quilombo revela uma formação variada, fruto da soma de diferentes vivências, mas também a dificuldade em determinar certos acontecimentos com precisão. O filho de Mariazinha, Zé Luiz, conta que sua mãe era filha de um tenente baiano, porém, ao ser entrevistada por César Spricigo antes de falecer, a própria acreditava que o pai era carioca.",
+
+  "O professor César atribui estas incongruências narrativas à forma de vida difícil dos moradores. “Na luta que imprimiram para sobreviverem, necessitavam apenas trabalhar para que não perecessem. A vida lhes era tão dura que não propiciava momentos para conversarem sobre os seus”. Em entrevista que lhe foi concedida por Diná de Assunção, em 1993, a moradora da comunidade contou: “eu não sei quase nada dos meus pais, só sei que ele era feitor de estrada. Ele veio, parece, de Minas Gerais, lá do norte”.",
+
+  "“Ao que tudo indica, os moradores do ‘Buraco Quente’, de origem negra, possuem muitas ligações em comum: certamente todos tiveram ancestrais provenientes da África, que eram trazidos para o Brasil a fim de serem utilizados como mão-de-obra escrava”, conclui o professor. Diversos habitantes, mesmo não conhecendo a história de seus pais, acreditam em sua maioria que vieram do mesmo lugar: o Morro da África, em Timbé do Sul, incluindo a família de Custódia, neta de Maria Rosalina. Hoje, aquela comunidade já não existe mais, e registros de sua existência existem apenas através da oralidade geracional dos filhos e netos de seus habitantes.",
+
+  "Referências a um “Morro da África” em Santa Catarina são encontradas apenas em uma comunidade no norte do estado, em Jaraguá do Sul, 380 km de Araranguá. O único registro bibliográfico que esta reportagem foi capaz de localizar eram as pesquisas do professor César Spricigo, cujo nem todas estão disponíveis publicamente e foram cedidas para a apuração deste texto.",
+];
+
+const eleventhBodyText = {
+  title: "Um Terreno, Uma Família",
+  texts: [
+    "Foi no ônibus, em 1945, que Maximiliano Henneman conheceu Carlos Belinzoni, por acaso. Membro de uma das famílias mais influentes de Araranguá. Carlos há anos comerciava farinha de mandioca no município, e junto do filho, Walter, administravam um açude e moinho, investimento que na época dava os primeiros passos. Em uma conversa casual, Maximiliano revelou seu ofício de “guarda-livros”, hoje contador, e recebeu o convite dos Belinzoni para vir até o município trabalhar com eles por um período de teste de seis meses, caso não gostasse, poderia seguir seu caminho original para Anapólis. Seu Max acabou ficando.",
+  ],
+};
+
+const sixthImage = {
+  alt: "Foto de Maximiliano Henneman em sua casa, fumando um charuto.",
+  subtitle: "Maximiliano Henneman",
+  credits: "Arquivo/Antônio Henneman",
+
+  leftImage: "/images/past06.webp",
+  rightText:
+    "Nascido em Lajeado, Rio Grande do Sul, em 1904, Maximiliano morava em Porto Alegre, onde vivia com a esposa, Judith, e seus 10 filhos. A convite dos Belinzoni, partiu para Santa Catarina com o intuito de adquirir terras em que a família pudesse morar. A esposa veio depois, sem as crianças, para conhecer a cidade e o terreno onde seria a casa, foi só com a aprovação dela que, após três anos, em 1948, os filhos viriam morar no casarão que dava fundos para onde hoje está Maria Rosalina.",
+};
+
+const twelfthBodyText = [
+  "Maggy Henneman, filha de Maximiliano, conta que quando o pai comprou o terreno, um pequeno grupo de pessoas já vivia ali, à revelia do proprietário anterior que pretendia vender o espaço e, no processo, expulsar a todos. Maximiliano então decidiu adquirir o local, já como um projeto social, permitindo que as pessoas que lá estavam permanecessem.",
+
+  "“[A Mariazinha] foi trabalhar como empregada da casa do meu avô e ele permitiu que daí, pela proximidade, ela morasse ali”, conta o neto, Antônio. “E depois outras pessoas, como era uma área razoável, solicitaram permissão para também ali se instalarem e ele foi permitindo.”",
+
+  "Foi com Mariazinha já empregada pela família que mais vieram, todos a partir do consenso dela e de Maximiliano. Chegaram Maria Rosalina e as parentes, que logo passaram a compôr a formação da comunidade. Em sua maioria eram lavadeiras, cada uma era dona de um poço, onde os filhos de Seu Max brincavam com as outras crianças.",
+
+  "Maggy lembra de trabalhar na terra e brincar no pomar plantado pelo pai, que tinha todas as frutas que podiam imaginar. Conta que eram bastante livres para ir e vir, conhecendo todos os vizinhos e as outras crianças.",
+
+  "Maximiliano estava sempre com seu charuto e, segundo Antônio, era bastante rígido com a família, “se eu pegasse dinheiro do meu avô tinha que devolver no mesmo dia”. Sua rigidez não se estendia para a esposa, “que é quem mandava nele, né? Bem entendido, não adianta dizer que é um grande homem se não tem uma grande mulher do lado”.",
+
+  "“Veio uma série de moradores, começaram a se estabelecer até que meio que lotou, né? Sem oposição dele, pelo contrário, com a permissão dele enquanto vivo e depois sem oposição dos familiares, dos descendentes dele, porque sabiam que aquilo ali era uma obra dele. Deles, dele e da avó. Ele não faria sem a vó autorizar.”",
+
+  "Judith é descrita pelos parentes como bastante culta, “o que ele gastava em charuto, ela gastava no cinema”. Antônio lembra dela sendo carinhosa, tanto com a família quanto com os moradores da comunidade. Fazia o café bastante quente para que as crianças não tomassem com pressa e lembrassem de comer pão para não ir brincar de barriga vazia. Já nos almoços de domingo, o refrigerante desta família de origem alemã era vinho com água e açúcar.",
+
+  "O pomar da infância de Maggy, na de Antônio tinha se tornado uma grande plantação em que ele e o primo Giovanni corriam do avô quando o acordavam de seu descanso. Maximiliano pegava uma vara de marmelo para assustar as crianças, mas não conseguia acertar nenhuma, já que sempre corriam para o mato. “Sai da macega”, ele gritava com frequência, por isso Giovanni acabou ficando com o apelido: macega.",
+
+  "Antes da formação do Colégio Murialdo, os Josefinos, grupo religioso que volta-se principalmente para bairros populares e periferias de centros urbanos, frequentemente repousavam na casa da família Henneman enquanto a escola ainda não existia. Quando chegaram em 1952, os padres identificaram a necessidade de um ginásio para a juventude, algo que os membros da paróquia e administração municipal buscaram remediar com doações de espaço para construção de uma instituição de ensino. Max, que também era proprietário de um terreno do outro lado da rua de Maria Rosalina, foi um dos doadores. Assim, em 1955, o Ginásio dos Padres seria fundado.",
+
+  "Segundo os netos, Maximiliano era uma pessoa de muita fé, em sua estatueta de Nossa Senhora, deixava uma flor fresca todos os dias. Rezava diversos terços diariamente, além de fazer rezas para pessoas doentes dizendo “eu vou rezar, mas você tem que rezar também.” Hoje, Antônio atribui sua crença ao avô, tendo herdado dele a estatueta e o hábito de orar o terço.",
+
+  "Era também muito ligado à política e, segundo o neto, se alinhava fortemente com Getúlio Vargas, fundador do Partido Trabalhista Brasileiro (PTB), além de presidente e ditador do país de 1930 a 1945 e entre 1951 e 1954. Na eleição de 1966, Max foi eleito vereador, sendo o único de oposição. A candidatura foi a convite do antigo Movimento Democrático Brasileiro (MDB) para substituir outro candidato assassinado três meses antes. Ele, junto de gestores do município, criaram um projeto de doações fixas a partir de um cadastro dos habitantes em vulnerabilidade social. Maggy conta que foi por causa da influência do pai e o constante trabalho com comunidades empobrecidas , não apenas do quilombo, que se tornou Assistente Social. Max fez um mandato completo, Antônio atribui o respeito que tinha na cidade como o motivo que os militares da ditadura não o perseguiram.",
+
+  "Judith faleceu em 1984, antes do marido. O neto Giovanni conta que, durante a divisão de seus bens, houve uma movimentação da comunidade com medo de que fossem despejados do terreno como parte da herança, rumor que ele acredita ter sido criado por “gente de fora” que desconhecia a história do quilombo com a família. Esse foi um momento de mágoa para Maximiliano, que sentiu-se ofendido pela ideia de que faria alguma coisa contra os habitantes ou que seus familiares tivessem alguma intenção de fazê-lo, “coisa que não se passou por nenhum dos herdeiros”.",
+
+  "O desconforto foi solucionado através do contato com os padres do Colégio Murialdo, que garantiram para comunidade que não seriam despejados. Max contou aos netos a chateação com o ocorrido e os orientou: “aqui ninguém mexe com meus negrinho”. Quando faleceu em 1985, os herdeiros seguiram a orientação.",
+
+  "Hoje, membros da comunidade lembram carinhosamente de Maximiliano. “O seu Max era uma bela pessoa. Às vezes faltava água, nós ia lá pegar na casa dele. E ele ajudava, né? Pedia um dinheirinho, ele dava”, descreve Maria Silésia.",
+
+  "“Falar de meu avô me deixa arrepiado, tamanho meu carinho por ele”, Antônio conta. “Ele sempre tratou com muito respeito tanto a Mariazinha quanto às demais pessoas que vieram morar ali.”",
+
+  "Os netos recordam também a época que transitavam livremente a comunidade. Contam de serem bem tratados e descrevem o quilombo como “uma comunidade de gente trabalhadora”, porém, Antônio diz que mesmo antigamente, a percepção de Araranguá com os habitantes não era de respeito.",
+
+  "Para a antropóloga Raquel Mombelli, casos de “ajuda” entre pessoas pretas e brancas no século passado eram envoltos em suas próprias complexidades. Aqueles que eram carentes nas questões de condição de vida e trabalho muitas vezes precisavam encontrar “aliados” para sua própria sobrevivência, como a figura de Maximiliano. Cenários como esses devem ser analisados de acordo com o contexto e mentalidade da época, Raquel aponta que pessoas como “Seu Max” provavelmente agiram da forma que acreditavam ser correto em seu tempo, oferecendo suporte da forma que podiam e julgavam apropriado.",
+
+  "A casa da família Henneman já não existe mais e o contato dos familiares diminuiu. Antônio quando encontra conhecidos de lá, diz que senta para conversar, e alguns ainda mantêm vínculos, embora a maioria dos filhos de Maximiliano já tenham falecido e os bisnetos sequer conheceram o casarão em que dividiram espaço com o quilombo.",
+
+  "“Foi um caminho natural. Ele foi deixando morar e foi deixando passar o tempo e era a vontade dele. Nós percebemos, os herdeiros do meu avô perceberam isso para não se opor”, Antônio conclui. “Então nunca houve conflito da família Hanneman com os moradores dali. Nunca. Se alguém falar diverso disso, olha, manda falar comigo”.",
+];
+
+const thirteenthBodyText = {
+  title: "“O Buraco Tá Pegando Fogo!”",
+};
+
+const seventhImage = {
+  alt: "Rosa Maria Anacleto relatando sua vivência para o documentário 'Há Vida Por Detrás do Muro'.",
+  subtitle: "Rosa Maria Anacleto",
+  credits: "Há Vida por Detrás do Muro",
+
+  rightImage: "/images/past07.webp",
+  leftText:
+    "Rosa Maria Anacleto nasceu e cresceu na Comunidade Remanescente de Quilombo Maria Rosalina, aos 60 anos, buscando melhores condições de vida, se mudou do local. Este não é um caso incomum, com vários dos habitantes originários deixando a comunidade uma vez que adquirirem melhores condições financeiras.",
 };
 </script>
 
